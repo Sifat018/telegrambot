@@ -5,7 +5,8 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, Callb
 import datetime
 
 # --- CONFIGURATION ---
-BOT_TOKEN = "আপনার_BotFather_থেকে_পাওয়া_Token"
+import os
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
 OWNER_ID = 7280691598
 VIP_AMOUNT = 50
 VIP_DURATION_DAYS = 30
